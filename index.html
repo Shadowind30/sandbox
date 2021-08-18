@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        if ('serviceWorker' in navigator) {
+           console.log("Will the service worker register?");
+           navigator.serviceWorker.register('service-worker.js')
+             .then(function(reg){
+               console.log("Yes, it did.");
+            }).catch(function(err) {
+               console.log("No it didn't. This happened:", err)
+           });
+        }
+    </script>
+    <script src="script.js" defer></script>
+    <title>Sandbox</title>
+    </head>
+    
+    <body>
+        <div class="flex flex-row">
+           <div class="bg-blue-500 m-2 w-1/12" contenteditable></div>
+           <div class="bg-blue-500 m-2 w-1/12" contenteditable></div>
+           <div class="bg-blue-500 m-2 w-1/12" contenteditable></div>
+           <div class="bg-blue-500 m-2 w-1/12" contenteditable></div>
+           <div class="bg-blue-500 m-2 w-1/12" contenteditable></div>
+           <div class="bg-blue-500 m-2 w-1/12" contenteditable></div>
+           <div class="bg-blue-500 m-2 w-1/12" contenteditable></div>
+           <div class="bg-blue-500 m-2 w-1/12" contenteditable></div>
+        </div>
+    </body>
+    
+    </html>
