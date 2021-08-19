@@ -5,7 +5,7 @@
   "background_color": "#F7F8F9",
   "display": "standalone",
   "scope": "https://shadowind30.github.io/sandbox/",
-  "start_url": "https://shadowind30.github.io/sandbox/",
+  "start_url": "/",
   "icons": [
     {
       "src": "assets/icon_192.png",
