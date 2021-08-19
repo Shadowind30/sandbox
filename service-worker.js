@@ -3,8 +3,8 @@ self.addEventListener('fetch', function(event) {
   if (!event.request.url.includes('http')) return;
   event.respondWith(async function() {
     try{
-      var res = await fetch(event.request);
       debugger
+      var res = await fetch(event.request);
       var cache = await caches.open('cache');
       /// Return if the request is made by other than the web page
       if (!event.request.url.includes('http')) return;
