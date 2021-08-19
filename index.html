@@ -7,15 +7,16 @@
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
     <script src="service-worker.js"></script>
+    <link rel="apple-touch-icon" href="assets/icon_512.png">
     <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function () {
             console.log("SW: Registering...");
           navigator.serviceWorker
-            .register("service-worker.js", {scope: 'https://shadowind30.github.io/sandbox/'})
+            .register("service-worker.js", {scope: '/'})
             .then(function (reg) {
               console.log("SW: Registered");
             })
