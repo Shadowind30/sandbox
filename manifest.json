@@ -4,7 +4,7 @@
   "theme_color": "#4A90E2",
   "background_color": "#F7F8F9",
   "display": "standalone",
-  "start_url": "/?utm_source=launcher",
+  "start_url": "/",
   "icons": [
     {
       "src": "assets/icon_192.png",
