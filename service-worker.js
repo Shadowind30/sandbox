@@ -1,6 +1,6 @@
 self.addEventListener('fetch', function(event) {
   /// Return if the request is made by other than the web page
-  if (!(event.request.url.indexOf('http') === 0)) return;
+  if (!event.request.url.includes('http')) return;
   event.respondWith(async function() {
      try{
        var res = await fetch(event.request);
